@@ -125,3 +125,17 @@ function addItemToCart(productTitle, productPrice, productImage) {
     // quantity-input on newly added products did not work - fix
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
+
+// checkout button
+document.getElementsByClassName('btn-checkout')[0].addEventListener('click', checkoutClicked)
+
+function checkoutClicked() {
+    alert('Checkout completed')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+
+    // remove items on purchase
+    //while (cartItems.hasChildNodes()) {
+    //  cartItems.removeChild(cartItems.firstChild)
+    //}
+    updateCartTotal()
+}
