@@ -11,3 +11,4 @@ var price = document.querySelector("#price").value
 
 var btn = document.querySelector("#input--button")
 btn.addEventListener("click", createCard)
+
