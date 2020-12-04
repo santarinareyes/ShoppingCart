@@ -7,30 +7,35 @@
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css" />
     <script src="shoppingcart.js" defer></script>
+    <script src="start.js" defer></script>
     <title>Document</title>
   </head>
   <body>
       <!-- navbar -->
 
     <!-- header -->
-    <header class="header-cart">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			  <div class="navbar-nav">
-				<a class="nav-link active" href="index.html">Startsidan<span class="sr-only">(current)</span></a>
-				<a class="nav-link" href="#contact">Contact</a>
-                <a class="shopping-cart" href="cart.html"> 
-                    <i class="fas fa-shopping-basket"></i>
-                </a>
-			  </div>
-			</div>
-          </nav>		
-    </header>
-
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <a class="navbar-brand" href="#"></a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+             <div class="navbar-nav">
+             <a class="nav-link active" href="index.html">Startsidan<span class="sr-only">(current)</span></a>
+                     <a class="nav-link" href="#contact">Contact</a>
+                     <a class="nav-link" href="admin.html">Admin</a>
+                     
+             </div>
+                 </div>
+                 <div class="div-cart">
+                     <a class="shopping-cart" href="cart.html"> 
+                         <i class="fas fa-shopping-basket"></i>
+                         <span>0</span>
+                     </a>
+                     </div>
+               </nav>
+         </header>
     <!-- landing page -->
     <section class="landingpage-section">
       <h2 class="cart-title">Varukorg</h2>
@@ -55,6 +60,7 @@
 
     </footer>
 
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
   </body>
 </html>
