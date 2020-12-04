@@ -16,7 +16,6 @@ let products = [ //sparar alla varor
     
 ]
 
-
 for (let i=0; i < carts.length; i++){ //loopar igenom alla varor i shoppen
     carts[i].addEventListener('click', () => { //hämtar priset samt 
         cartNumbers(products[i]);
